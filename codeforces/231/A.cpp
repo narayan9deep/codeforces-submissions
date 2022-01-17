@@ -1,12 +1,13 @@
-#include <bits/stdc++.h>
-
-#define fastio() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define nline "\n"
-
+#include<bits/stdc++.h>
 using namespace std;
 
-void solve()
+#define ll long long
+
+int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
     int n;
     int ans = 0;
     cin>>n;
@@ -15,50 +16,32 @@ void solve()
         int arr[3];
         for (int i = 0; i < 3; ++i)
         {
+            /* code */
             cin>>arr[i];
         }
         int sum = 0;
         for (int i = 0; i < 3; ++i)
         {
+            /* code */
             if (arr[i]==1)
             {
+                /* code */
                 sum++;
             }
         }
         if (sum>=2)
         {
+            /* code */
             ans++;
         }
     }
-    cout<<ans<<nline;
-    return;
+    cout<<ans;
+    
+    return 0;
 }
 
-int main()
-{
-	fastio();
-	#ifndef ONLINE_JUDGE
-		freopen("input.txt",  "r",  stdin);
-		freopen("output.txt", "w", stdout);
-        freopen("Error.txt", "w", stderr);
-	#endif
-	clock_t z = clock();
 
-	//write code here:
 
-        // //if number of testcases present:
-        //     //input number of test cases:
-        //     int tc;
-        //     cin>>tc;
-        //     while(tc--)
-        //     {
-        //         solve();
-        //     }
-
-        //if number of testcases not present
-        solve();
-
-	cerr << "Run Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC);
-	
-	return 0;
-}
+// Submission by: Deep Narayan
+// Codeforces Profile: https://codeforces.com/profile/narayan9deep
+// Codechef Profile: https://www.codechef.com/users/narayan9deep
